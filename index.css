@@ -1,0 +1,12 @@
+h3 {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* You can use 'normal' or 'lighter' for different weights */
+  color: #333; /* Choose an appropriate text color */
+  margin: 10px 0; /* Adjust margins for spacing */
+  padding: 0; /* Reset padding to ensure consistency */
+  text-transform: uppercase; /* Convert text to uppercase if desired */
+  text-align: center; /* Center the text if needed */
+  line-height: 1.2; /* Control line height for better readability */
+  letter-spacing: 0.5px; /* Adjust letter spacing for better appearance */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
