@@ -63,4 +63,5 @@ body {
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
   min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+  padding: 100px;
 }
