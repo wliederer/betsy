@@ -10,6 +10,12 @@ h3 {
   letter-spacing: 0.5px; /* Adjust letter spacing for better appearance */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
 }
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
 
 /* Apply a reset to remove default ul styles */
 ul {
