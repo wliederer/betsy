@@ -65,3 +65,10 @@ body {
   min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
   padding: 100px;
 }
+
+.small-disclaimer {
+  font-size: 12px; /* Adjust the font size as needed */
+  color: #666; /* You can specify your preferred text color */
+  font-style: italic; /* Make it italic if desired */
+  /* Add any additional styling you want for your disclaimer text */
+}
