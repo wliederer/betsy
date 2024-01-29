@@ -1,3 +1,1 @@
-# wliederer.github.io
-
-FanPower Contest Throw Down Page
+# Betsy website coming soon
