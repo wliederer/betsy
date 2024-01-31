@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%; /* Ensure images don't overflow the card */
+  height: 250px; /* Maintain image aspect ratio */
+}
+
+.card p {
+  font-size: 16px; /* Product price font size */
+  font-weight: bold;
+  /* color: #ff6600; Price color - customize as needed */
+  margin: 0;
+}
+
+.card div {
+  font-size: 14px; /* Product title font size */
+  margin: 10px 0; /* Margin around the title */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  align-items: flex-start;
+  font-family: 'Outfit', sans-serif;
+}
