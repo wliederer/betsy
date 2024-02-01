@@ -17,8 +17,10 @@
 }
 
 .card img {
-  max-width: 100%; /* Ensure images don't overflow the card */
-  height: 250px; /* Maintain image aspect ratio */
+  max-width: 100%;
+  max-height: 150px;
+  height: auto;
+  width: auto;
 }
 
 .card p {

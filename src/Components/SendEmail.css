@@ -1,0 +1,58 @@
+/* EmailForm.css (create a separate CSS file) */
+
+/* Container styles */
+.email-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.heading {
+  font-size: 14px;
+  display: flex;
+  justify-content: left;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+/* Input field styles */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Button styles */
+.send {
+  background-color: #3140af;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 48px;
+  border-radius: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.send:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}

@@ -11,7 +11,7 @@ const OutsideClickHandler = ({ onOutsideClick, children }) => {
         }
       }
 
-      if (e.target && text.length && text[0] != content) {
+      if (e.target && text.length && text[0] !== content) {
         onOutsideClick()
       }
     }

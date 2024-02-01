@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Header.css'
 import github from './svgs/github.svg'
 import linkedin from './svgs/linkedin.svg'
@@ -36,12 +36,20 @@ const Header = ({ open, setIsOpen }) => {
         </div>
         <ul className="nav-links">
           <li className="icon-container">
-            <a href="/">
+            <a
+              href="https://github.com/wliederer"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="icon" src={github} alt="github" />
             </a>
           </li>
           <li className="icon-container">
-            <a href="/shop">
+            <a
+              href="https://www.linkedin.com/in/william-liederer"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="icon" src={linkedin} alt="linkedin" />
             </a>
           </li>
