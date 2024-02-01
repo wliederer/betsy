@@ -2,3 +2,9 @@
   text-align: center;
   height: 100%;
 }
+
+.rolly {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
