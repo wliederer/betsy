@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/betsy/static/css/main.2dd46592.css",
-    "main.js": "/betsy/static/js/main.958809bb.js",
+    "main.css": "/betsy/static/css/main.e0a64387.css",
+    "main.js": "/betsy/static/js/main.92599f47.js",
     "static/js/787.a2c576de.chunk.js": "/betsy/static/js/787.a2c576de.chunk.js",
-    "static/media/nun.JPG": "/betsy/static/media/nun.3864bf9743f9dd74fe05.JPG",
-    "static/media/cowboy.JPG": "/betsy/static/media/cowboy.0a36e0b1cad98fb40aee.JPG",
-    "static/media/gus.JPG": "/betsy/static/media/gus.88521d1c84bd353ac5f1.JPG",
+    "static/media/gus2.JPG": "/betsy/static/media/gus2.a4f0f199062956e07600.JPG",
     "static/media/github.svg": "/betsy/static/media/github.1ec1b6358af088f82002590fd508d125.svg",
     "static/media/linkedin.svg": "/betsy/static/media/linkedin.d675b76d6dab8fe82e5c41fd0e136b1e.svg",
     "index.html": "/betsy/index.html",
     "static/media/hamburger.svg": "/betsy/static/media/hamburger.28c2d6a9540b176505ac1b08262410b9.svg",
-    "main.2dd46592.css.map": "/betsy/static/css/main.2dd46592.css.map",
-    "main.958809bb.js.map": "/betsy/static/js/main.958809bb.js.map",
+    "main.e0a64387.css.map": "/betsy/static/css/main.e0a64387.css.map",
+    "main.92599f47.js.map": "/betsy/static/js/main.92599f47.js.map",
     "787.a2c576de.chunk.js.map": "/betsy/static/js/787.a2c576de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dd46592.css",
-    "static/js/main.958809bb.js"
+    "static/css/main.e0a64387.css",
+    "static/js/main.92599f47.js"
   ]
 }
