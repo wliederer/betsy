@@ -5,6 +5,7 @@ import ProductGrid from './Components/ProductGrid'
 import React, { useState, useEffect } from 'react'
 import SendEmail from './Components/SendEmail'
 import { Rolly } from 'rolly-polly-polls'
+import { ColorRing } from 'react-loader-spinner'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -92,7 +93,26 @@ function App() {
             onPick={onPick}
             theme={'betsy'}
           />
-        ) : null}
+        ) : (
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <ColorRing
+              visible={true}
+              height="80"
+              width="80"
+              ariaLabel="color-ring-loading"
+              wrapperStyle={{}}
+              wrapperClass="color-ring-wrapper"
+              colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+            />
+            One Moment Free Api is Waking Up...
+          </div>
+        )}
       </div>
       <ProductGrid />
       <SendEmail />
