@@ -5,13 +5,15 @@ const OutsideClickHandler = ({ onOutsideClick, children }) => {
     const handleClickOutside = (e) => {
       const content = e.target.textContent
       const text = []
+      const insde = false
       for (const child of children.props.children) {
         if (child.props.children) {
           text.push(child.props.children)
         }
       }
-
-      if (e.target && text.length && text[0] !== content) {
+      console.log(text)
+      console.log(content)
+      if (e.target && text.length && content != 'Rolly Widget') {
         onOutsideClick()
       }
     }

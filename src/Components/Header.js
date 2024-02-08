@@ -29,6 +29,16 @@ const Header = ({ open, setIsOpen }) => {
                 <div>
                   Hi My name is Will and I made this website to show off
                   stickers and code.
+                  <div>
+                    Try out my latest NPM package as seen on this page{' '}
+                    <a
+                      href="https://www.npmjs.com/package/rolly-polly-polls"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Rolly Widget
+                    </a>
+                  </div>
                 </div>
               </div>
             </OutsideClickHandler>

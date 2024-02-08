@@ -135,6 +135,7 @@ nav {
     0px 1px 3px 0px #0000004d,
     0px 4px 8px 3px #00000026;
   transition: left 0.3s ease; /* Smooth sliding transition */
+  text-align: left;
 }
 
 .triangle {
@@ -147,7 +148,7 @@ nav {
   border: 10px solid #ffffff;
   transform: rotate(-45deg);
   box-shadow: 5px -5px 5px 0px #00000026;
-
+  border-radius: 0 0 0 9px;
   /* 0px 4px 8px 3px #00000026; */
   /* border-left: 10px solid transparent; */
   /* border-bottom: 10px solid transparent; */

@@ -2,35 +2,97 @@ import './App.css'
 import Header from './Components/Header'
 import Overlay from './Components/Overlay'
 import ProductGrid from './Components/ProductGrid'
-import React, { useState } from 'react'
-import SendEmail, { handleSendEmail } from './Components/SendEmail'
+import React, { useState, useEffect } from 'react'
+import SendEmail from './Components/SendEmail'
 import { Rolly } from 'rolly-polly-polls'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
+  const [poll, setPoll] = useState(null)
 
   const onLoad = (data) => {
     console.log(data)
   }
   const onPick = async (data) => {
     console.log('Pick Made', data)
-    let message = data.title + ' ' + data.pick
-    handleSendEmail(message)
+    let body = poll
+    //update pick
+    for (const pick of body.picks) {
+      if (data.pick.pickOption == pick.pickOption) {
+        pick.count = data.pick.count
+      }
+    }
+    await fetch(`https://vote-app-y704.onrender.com/polls/${poll._id}`, {
+      method: 'PUT',
+      headers: {
+        'X-API-KEY': 'vote-or-die',
+        'Content-Type': 'application/json',
+        // Add other headers as needed
+      },
+      body: JSON.stringify({
+        _id: body._id,
+        question: body.question,
+        picks: body.picks,
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok')
+        }
+        return response.json()
+      })
+      .then((data) => {
+        // console.log('Data received:', data)
+        setPoll(data)
+      })
+      .catch((error) => {
+        console.error('There was a problem with the fetch operation:', error)
+      })
   }
+
+  useEffect(() => {
+    fetch(
+      `https://vote-app-y704.onrender.com/polls/search?question=How much are you willing to spend on a sticker?`,
+      {
+        headers: {
+          'X-API-KEY': 'vote-or-die',
+          'Content-Type': 'application/json',
+          // Add other headers as needed
+        },
+      },
+    )
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok')
+        }
+        return response.json()
+      })
+      .then((data) => {
+        // console.log('Data received:', data)
+        setPoll(data[0])
+      })
+      .catch((error) => {
+        console.error('There was a problem with the fetch operation:', error)
+      })
+  }, [])
 
   return (
     <div className="App">
       <Header open={isOpen} setIsOpen={setIsOpen} />
       {isOpen ? <Overlay /> : null}
       <div className="rolly">
-        <Rolly
-          title={'How much are you willing to spend on a sticker?'}
-          picks={['1$', '2$', '3$', '4$', '5$', 'more!']}
-          pickMessage={'Thankyou for your pick! We have received your feedback'}
-          onLoad={onLoad}
-          onPick={onPick}
-          theme={'betsy'}
-        />
+        {poll ? (
+          <Rolly
+            title={poll.question}
+            picks={poll.picks}
+            pickMessage={
+              'Thankyou for your pick! We have received your feedback'
+            }
+            onLoad={onLoad}
+            onPick={onPick}
+            theme={'betsy'}
+          />
+        ) : null}
       </div>
       <ProductGrid />
       <SendEmail />
