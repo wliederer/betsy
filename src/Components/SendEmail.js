@@ -38,7 +38,7 @@ const SendEmail = () => {
           <div>
             <button
               className="send"
-              disabled={message.trim().length}
+              disabled={message.trim().length == 0}
               onClick={(e) => {
                 e.preventDefault()
                 handleSendEmail(message).then(() => setMessage(''))
