@@ -43,7 +43,6 @@ function App() {
         return response.json()
       })
       .then((data) => {
-        // console.log('Data received:', data)
         setPoll(data)
       })
       .catch((error) => {
@@ -69,7 +68,6 @@ function App() {
         return response.json()
       })
       .then((data) => {
-        // console.log('Data received:', data)
         setPoll(data[0])
       })
       .catch((error) => {

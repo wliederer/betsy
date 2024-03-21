@@ -11,8 +11,7 @@ const OutsideClickHandler = ({ onOutsideClick, children }) => {
           text.push(child.props.children)
         }
       }
-      console.log(text)
-      console.log(content)
+
       if (e.target && text.length && content != 'Rolly Widget') {
         onOutsideClick()
       }
