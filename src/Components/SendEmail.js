@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import './SendEmail.css'
 import emailjs from '@emailjs/browser'
 
-const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
-const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
-const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY
-console.log(SERVICE_ID)
+const SERVICE_ID = 'service_8om0mif'
+const TEMPLATE_ID = 'template_spprxgg'
+const PUBLIC_KEY = '2eyHiJYODn1OC-921'
+
 export const handleSendEmail = async (obj) => {
   let result = ''
   for (let key in obj) {
