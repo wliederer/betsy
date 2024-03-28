@@ -6,10 +6,13 @@ import React, { useState, useEffect } from 'react'
 import SendEmail from './Components/SendEmail'
 import { Rolly } from 'rolly-polly-polls'
 import { ColorRing } from 'react-loader-spinner'
+import Coffee from './Components/Coffee'
+import StickerCarousel from './Components/Carousel'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [poll, setPoll] = useState(null)
+  const [isSent, setIsSent] = useState(false)
 
   const onLoad = (data) => {
     console.log(data)
@@ -112,8 +115,10 @@ function App() {
           </div>
         )}
       </div>
-      <ProductGrid />
-      <SendEmail />
+      {/* <ProductGrid /> */}
+      <StickerCarousel />
+      {isSent ? <Coffee /> : null}
+      <SendEmail setIsSent={setIsSent} />
     </div>
   )
 }

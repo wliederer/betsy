@@ -1,14 +1,10 @@
 import React from 'react'
 import './ProductGrid.css'
-import gus from './images/gus2.JPG'
 import ProductCard from './ProductCard'
+import { productsArray } from './Utility'
 
 const ProductGrid = ({ open }) => {
-  // Dummy product data, you can replace it with actual data from your backend
-  const products = [
-    { id: 1, name: 'Gus', price: 'Free', image: gus },
-    // Add more products as needed
-  ]
+  const products = productsArray()
 
   return (
     <div className="product-grid">

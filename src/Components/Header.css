@@ -82,6 +82,7 @@ nav {
 
 /* Container for the icon and hover effect */
 .icon-container {
+  justify-content: center;
   position: relative; /* Required for positioning the ::before pseudo-element */
   display: flex; /* To prevent extra space around the container */
   cursor: pointer;
@@ -90,11 +91,16 @@ nav {
   height: 24px; /* Adjust based on your icon's height */
 }
 
+.icon-container a {
+  display: flex;
+  align-items: center;
+}
+
 /* The GitHub icon itself */
 .icon {
   fill: #000;
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: fill 0.3s ease;
   position: relative;
   z-index: 2;

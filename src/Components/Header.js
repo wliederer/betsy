@@ -3,6 +3,7 @@ import './Header.css'
 import github from './svgs/github.svg'
 import linkedin from './svgs/linkedin.svg'
 import hamburger from './svgs/hamburger.svg'
+import instagram from './svgs/instagram.svg'
 import OutsideClickHandler from './OutsideClickHandler'
 
 const Header = ({ open, setIsOpen }) => {
@@ -27,9 +28,9 @@ const Header = ({ open, setIsOpen }) => {
               <div className="overlay-menu">
                 <div className="triangle"></div>
                 <div>
-                  Hi My name is Will and I made this website to show off
-                  stickers and code.
-                  <div>
+                  Hi my name is Will and I made this website to share free
+                  stickers!
+                  {/* <div>
                     Try out my latest NPM package as seen on this page{' '}
                     <a
                       href="https://www.npmjs.com/package/rolly-polly-polls"
@@ -38,13 +39,22 @@ const Header = ({ open, setIsOpen }) => {
                     >
                       Rolly Widget
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </OutsideClickHandler>
           ) : null}
         </div>
         <ul className="nav-links">
+          <li className="icon-container">
+            <a
+              href="https://www.instagram.com/thats_baja_blasphemy/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="icon" src={instagram} alt="instagram" />
+            </a>
+          </li>
           <li className="icon-container">
             <a
               href="https://github.com/wliederer"

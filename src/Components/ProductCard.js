@@ -3,7 +3,7 @@ import './ProductCard.css'
 
 const ProductCard = ({ image, name, price }) => {
   return (
-    <div className="card" onClick={() => console.log('click')}>
+    <div className="card" onClick={() => console.log(name)}>
       <img src={image} alt={name} />
       <div className="container">
         <div>{name}</div>
