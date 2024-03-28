@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b85544c8.css",
-    "main.js": "/static/js/main.afe2ad9e.js",
+    "main.css": "/static/css/main.d36beb4c.css",
+    "main.js": "/static/js/main.de41ffbf.js",
     "static/js/787.a2c576de.chunk.js": "/static/js/787.a2c576de.chunk.js",
     "static/media/SurvivorGus.JPG": "/static/media/SurvivorGus.13cd3c7f5dfb34384183.JPG",
     "static/media/SpaceGus.JPG": "/static/media/SpaceGus.209f61d8fac8e29d52b4.JPG",
@@ -10,6 +10,7 @@
     "static/media/cowboy.JPG": "/static/media/cowboy.0a36e0b1cad98fb40aee.JPG",
     "static/media/gus2.JPG": "/static/media/gus2.a4f0f199062956e07600.JPG",
     "static/media/FishGus.JPG": "/static/media/FishGus.4cfa0bd58fe4d12c749a.JPG",
+    "static/media/bmc-button.png": "/static/media/bmc-button.51ee9893ca316276fd37.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
@@ -18,12 +19,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.d675b76d6dab8fe82e5c41fd0e136b1e.svg",
     "index.html": "/index.html",
     "static/media/hamburger.svg": "/static/media/hamburger.28c2d6a9540b176505ac1b08262410b9.svg",
-    "main.b85544c8.css.map": "/static/css/main.b85544c8.css.map",
-    "main.afe2ad9e.js.map": "/static/js/main.afe2ad9e.js.map",
+    "main.d36beb4c.css.map": "/static/css/main.d36beb4c.css.map",
+    "main.de41ffbf.js.map": "/static/js/main.de41ffbf.js.map",
     "787.a2c576de.chunk.js.map": "/static/js/787.a2c576de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b85544c8.css",
-    "static/js/main.afe2ad9e.js"
+    "static/css/main.d36beb4c.css",
+    "static/js/main.de41ffbf.js"
   ]
 }
