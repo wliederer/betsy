@@ -5,6 +5,7 @@ import nun from './images/nun.JPG'
 import fishGus from './images/FishGus.JPG'
 import survivorGus from './images/SurvivorGus.JPG'
 import spaceGus from './images/SpaceGus.JPG'
+import pp from './images/P&P.JPG'
 
 export const productsArray = () => {
   return [
@@ -15,6 +16,7 @@ export const productsArray = () => {
     { id: 5, name: 'Fish Gus', price: 'Free', image: fishGus },
     { id: 6, name: 'Survivor Gus', price: 'Free', image: survivorGus },
     { id: 7, name: 'Space Gus', price: 'Free', image: spaceGus },
+    { id: 9, name: 'P & P', price: 'Free', image: pp },
     // Add more products as needed
   ]
 }
