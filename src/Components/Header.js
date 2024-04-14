@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import github from './svgs/github.svg'
+import coffee from './svgs/coffee.svg'
 import linkedin from './svgs/linkedin.svg'
 import hamburger from './svgs/hamburger.svg'
 import instagram from './svgs/instagram.svg'
@@ -11,8 +12,8 @@ const Header = ({ open, setIsOpen }) => {
     <header>
       <nav>
         <div className="logo">
-          <h1>Betsy</h1>
-          <div>
+          <h1>Free Sticker</h1>
+          {/* <div>
             <div
               className="icon-container-logo"
               onClick={() => {
@@ -22,7 +23,7 @@ const Header = ({ open, setIsOpen }) => {
               <img className="icon" src={hamburger} alt="hamburger" />
               <div>WhoAmI</div>
             </div>
-          </div>
+          </div> */}
           {open ? (
             <OutsideClickHandler onOutsideClick={() => setIsOpen(!open)}>
               <div className="overlay-menu">
@@ -57,11 +58,11 @@ const Header = ({ open, setIsOpen }) => {
           </li>
           <li className="icon-container">
             <a
-              href="https://github.com/wliederer"
+              href="https://www.buymeacoffee.com/kittyturbo"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="icon" src={github} alt="github" />
+              <img className="icon" src={coffee} alt="coffee" />
             </a>
           </li>
           <li className="icon-container">

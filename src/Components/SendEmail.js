@@ -6,23 +6,6 @@ const SERVICE_ID = 'service_8om0mif'
 const TEMPLATE_ID = 'template_spprxgg'
 const PUBLIC_KEY = '2eyHiJYODn1OC-921'
 
-export const handleSendEmail = async (obj) => {
-  let result = ''
-  for (let key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      result += key + ': ' + obj[key] + ', '
-    }
-  }
-  result = result.slice(0, -2)
-  emailjs.send(SERVICE_ID, TEMPLATE_ID, { message: result }, PUBLIC_KEY).then(
-    (result) => {
-      console.log(result.text)
-    },
-    (error) => {
-      console.log(error.text)
-    },
-  )
-}
 
 const SendEmail = (props) => {
   const [message, setMessage] = useState('')
@@ -31,6 +14,26 @@ const SendEmail = (props) => {
   const [city, setCity] = useState('')
   const [state, setState] = useState('')
   const [zip, setZip] = useState('')
+
+  const handleSendEmail = async (obj) => {
+    let result = ''
+    for (let key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        result += key + ': ' + obj[key] + ', '
+      }
+    }
+    result = result.slice(0, -2)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, { message: result }, PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text)
+        props.setShowPopup(true)
+      },
+      (error) => {
+        console.log(error.text)
+      },
+    )
+  }
+
 
   const handleZipCodeChange = (event) => {
     setZip(event.target.value)
@@ -60,7 +63,7 @@ const SendEmail = (props) => {
   return (
     <div className="email-container">
       <div className="heading">
-        * Give me a mailing address and I well send free stickers!
+        * Give me a mailing address and I well send free stickers by mail!
       </div>
       <div>
         <form>
