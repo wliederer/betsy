@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.667b2330.css",
+    "main.css": "/static/css/main.2d55e96b.css",
     "main.js": "/static/js/main.41a44a33.js",
     "static/js/787.a2c576de.chunk.js": "/static/js/787.a2c576de.chunk.js",
     "static/media/Hero.PNG": "/static/media/Hero.74902fd7f2bb712c3cfa.PNG",
@@ -9,8 +9,8 @@
     "static/media/P&P.JPG": "/static/media/P&P.84b5f6bd9a2c9891e39b.JPG",
     "static/media/squirrel.JPG": "/static/media/squirrel.1537551494475c45cd8d.JPG",
     "static/media/nun.JPG": "/static/media/nun.26e67cb4439698159533.JPG",
+    "static/media/Hellbone.otf": "/static/media/Hellbone.1a4fea5b7315520764b5.otf",
     "static/media/cowboy.JPG": "/static/media/cowboy.0a36e0b1cad98fb40aee.JPG",
-    "static/media/CampanaScript.otf": "/static/media/CampanaScript.d1d5c7304f708ff7b4aa.otf",
     "static/media/gus2.JPG": "/static/media/gus2.a4f0f199062956e07600.JPG",
     "static/media/FishGus.JPG": "/static/media/FishGus.4cfa0bd58fe4d12c749a.JPG",
     "static/media/bmc-button.png": "/static/media/bmc-button.51ee9893ca316276fd37.png",
@@ -24,12 +24,12 @@
     "static/media/closex.svg": "/static/media/closex.3374c18dd209ee7109999803c8e562b9.svg",
     "static/media/coffee.svg": "/static/media/coffee.2073caaf24fa6850651162b5fc2d1ecf.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.28c2d6a9540b176505ac1b08262410b9.svg",
-    "main.667b2330.css.map": "/static/css/main.667b2330.css.map",
+    "main.2d55e96b.css.map": "/static/css/main.2d55e96b.css.map",
     "main.41a44a33.js.map": "/static/js/main.41a44a33.js.map",
     "787.a2c576de.chunk.js.map": "/static/js/787.a2c576de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.667b2330.css",
+    "static/css/main.2d55e96b.css",
     "static/js/main.41a44a33.js"
   ]
 }
