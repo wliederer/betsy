@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Header.css'
 import github from './svgs/github.svg'
 import coffee from './svgs/coffee.svg'
@@ -8,6 +8,19 @@ import instagram from './svgs/instagram.svg'
 import OutsideClickHandler from './OutsideClickHandler'
 
 const Header = ({ open, setIsOpen }) => {
+
+
+  window.addEventListener('scroll', function () {
+    var header = document.querySelector('header');
+    var scrollPosition = window.scrollY;
+
+    // Calculate opacity based on scroll position
+    var opacity = Math.min(0.5, scrollPosition / 500);
+
+    // Update the opacity of the header
+    header.style.backgroundColor = 'rgba(244, 239, 194, ' + opacity + ')';
+  });
+
   return (
     <header>
       <nav>

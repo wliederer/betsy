@@ -2,8 +2,9 @@
 
 /* Header container styles */
 header {
-  background-color: #f4efc2;
-  border-bottom: 1px solid rgba(14, 14, 14, 0.18);
+  /* background-color: #f4efc2; */
+  background-color: rgba(244, 239, 194, 0);
+  /* border-bottom: 1px solid rgba(14, 14, 14, 0.18); */
   position: fixed; /* Fixed position to keep the header at the top */
   top: 0;
   left: 0;
@@ -19,6 +20,7 @@ nav {
   display: flex;
   justify-content: space-between; /* Space out the logo and links */
   align-items: center; /* Vertically center items */
+  height: 40px;
 }
 
 @font-face {
