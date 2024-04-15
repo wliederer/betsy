@@ -1,6 +1,6 @@
 .hero-container {
     background-image: url('./images/Hero.PNG');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     /* padding: 100px 0 200px 0; */
     height: 600px;
@@ -11,6 +11,7 @@
   @media (max-width: 768px) {
     /* Adjust height for mobile devices */
     .hero-container {
+      background-size: cover;
         height: 300px; /* Change to your desired height for mobile */
     }
 }
