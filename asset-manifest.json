@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f194ecdd.css",
-    "main.js": "/static/js/main.67381c25.js",
+    "main.css": "/static/css/main.667b2330.css",
+    "main.js": "/static/js/main.41a44a33.js",
     "static/js/787.a2c576de.chunk.js": "/static/js/787.a2c576de.chunk.js",
     "static/media/Hero.PNG": "/static/media/Hero.74902fd7f2bb712c3cfa.PNG",
     "static/media/SurvivorGus.JPG": "/static/media/SurvivorGus.13cd3c7f5dfb34384183.JPG",
@@ -10,6 +10,7 @@
     "static/media/squirrel.JPG": "/static/media/squirrel.1537551494475c45cd8d.JPG",
     "static/media/nun.JPG": "/static/media/nun.26e67cb4439698159533.JPG",
     "static/media/cowboy.JPG": "/static/media/cowboy.0a36e0b1cad98fb40aee.JPG",
+    "static/media/CampanaScript.otf": "/static/media/CampanaScript.d1d5c7304f708ff7b4aa.otf",
     "static/media/gus2.JPG": "/static/media/gus2.a4f0f199062956e07600.JPG",
     "static/media/FishGus.JPG": "/static/media/FishGus.4cfa0bd58fe4d12c749a.JPG",
     "static/media/bmc-button.png": "/static/media/bmc-button.51ee9893ca316276fd37.png",
@@ -23,12 +24,12 @@
     "static/media/closex.svg": "/static/media/closex.3374c18dd209ee7109999803c8e562b9.svg",
     "static/media/coffee.svg": "/static/media/coffee.2073caaf24fa6850651162b5fc2d1ecf.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.28c2d6a9540b176505ac1b08262410b9.svg",
-    "main.f194ecdd.css.map": "/static/css/main.f194ecdd.css.map",
-    "main.67381c25.js.map": "/static/js/main.67381c25.js.map",
+    "main.667b2330.css.map": "/static/css/main.667b2330.css.map",
+    "main.41a44a33.js.map": "/static/js/main.41a44a33.js.map",
     "787.a2c576de.chunk.js.map": "/static/js/787.a2c576de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f194ecdd.css",
-    "static/js/main.67381c25.js"
+    "static/css/main.667b2330.css",
+    "static/js/main.41a44a33.js"
   ]
 }
