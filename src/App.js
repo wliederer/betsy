@@ -16,18 +16,14 @@ function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [poll, setPoll] = useState(null)
   const [isSent, setIsSent] = useState(true)
-  const [showPopup, setShowPopup] = useState(false);
 
-  const handleClose = () => {
-    setShowPopup(false)
-  }
+
 
   return (
     <div className="App">
       <Header open={isOpen} setIsOpen={setIsOpen} />
       <Hero />
-      <SendEmail setIsSent={setIsSent} setShowPopup={setShowPopup} />
-      {showPopup ? <OverlayCard message={"Your request has been received. Thank You!"} toggle={handleClose} /> : null}
+      <SendEmail setIsSent={setIsSent} />
       <FAQSection />
     </div>
   )

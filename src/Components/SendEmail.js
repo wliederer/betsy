@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './SendEmail.css'
 import emailjs from '@emailjs/browser'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const SERVICE_ID = 'service_8om0mif'
 const TEMPLATE_ID = 'template_spprxgg'
 const PUBLIC_KEY = '2eyHiJYODn1OC-921'
@@ -14,8 +15,12 @@ const SendEmail = (props) => {
   const [city, setCity] = useState('')
   const [state, setState] = useState('')
   const [zip, setZip] = useState('')
+  const [loading, setLoading] = useState(false);
+  const notify = (message) => toast(message);
+
 
   const handleSendEmail = async (obj) => {
+    setLoading(true)
     let result = ''
     for (let key in obj) {
       if (obj.hasOwnProperty(key)) {
@@ -26,10 +31,12 @@ const SendEmail = (props) => {
     emailjs.send(SERVICE_ID, TEMPLATE_ID, { message: result }, PUBLIC_KEY).then(
       (result) => {
         console.log(result.text)
-        props.setShowPopup(true)
+        setLoading(false)
+        notify("🦄 Success you are getting stickers!")
       },
       (error) => {
         console.log(error.text)
+        notify("Uh Oh! something went wrong try again")
       },
     )
   }
@@ -106,10 +113,10 @@ const SendEmail = (props) => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Want a free custom sticker? Include your email or social and I will get in contact and create a free custom sticker for you!"
           />
-          <div>
+          <div className='button-container'>
             <button
               className="send"
-              disabled={zip.length < 5 && address.length === 0}
+              disabled={zip.length < 5 && address.length === 0 || loading}
               onClick={(e) => {
                 e.preventDefault()
                 handleSendEmail({ address, city, state, zip, message }).then(
@@ -120,11 +127,16 @@ const SendEmail = (props) => {
                 )
               }}
             >
-              Send Email
+              {loading ? (
+                <span className="spinner" aria-hidden="true"></span>
+              ) : (
+                'Submit'
+              )}
             </button>
           </div>
         </form>
       </div>
+      <ToastContainer toastStyle={{ backgroundColor: "#f7f7f7" }} />
     </div>
   )
 }
