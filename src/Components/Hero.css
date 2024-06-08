@@ -37,6 +37,12 @@
     top: 30%;
     transform: translateY(-50%);
   }
+  @media (max-width: 768px) {
+    /* Adjust height for mobile devices */
+    .hero-title {
+      top: 23%;
+    }
+  }
   
   .hero-subtitle {
     font-size: 24px;
